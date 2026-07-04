@@ -1,0 +1,27 @@
+/* .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lavender;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 30px;
+    width: 500px;
+    box-shadow: 4px 4px 4px purple;
+}
+
+button{
+    margin-left: 20px;
+    background-color: lavenderblush;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+button:hover{
+    background-color: rgb(244, 189, 208);
+}
+
+.error{
+    color: red;
+    font-size: 20px;
+} */
