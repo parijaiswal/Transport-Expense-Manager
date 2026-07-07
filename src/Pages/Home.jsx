@@ -1,10 +1,12 @@
 import CardInfo from "../components/CardInfo";
+import RecentExpenses from "../components/RecentExpenses";
 import ExpenseTracker from "./ExpenseTracker";
+import Recenttrip from "../components/Recenttrip";
 import { FaPlus } from "react-icons/fa";
 //import "./Home.css";
 function Home(){
     return(
-        <div className="bg-[#fafafa]">
+        <div className="bg-[#fafafa] min-h-screen min-w-full m-0 ">
         <div className="flex flex-col items-center bg-[#cadec9] rounded-2xl p-4 m-8 g-40 h-100 from-neutral-800 to-neutral-900">
             <div className="flex flex-row">
             <div>
@@ -16,9 +18,15 @@ function Home(){
                 <img src="./src/assets/Hero-image-bg.png" alt="main image"  />
             </div>
             </div>
-            <CardInfo/>
+            </div>  
+             <CardInfo/> 
+             <div className="flex flex-row justify-center items-center gap-25 m-8 h-auto">
+            <RecentExpenses />
+             <Recenttrip/>
+             </div>
+             
         </div>
-    </div>
+        
     )
 
 }
