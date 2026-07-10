@@ -14,9 +14,9 @@ function Recenttrip(){
                     <div className="font-bold">{item.bill_amt} </div>
                     
                 </div>
-                <div className="flex flex-row justify-between text-gray-700 text-sm  font-medium pt-2">
+                <div className="flex flex-row justify-between text-gray-700   font-medium pt-2">
                     <div>Driver: {item.Driver}</div>
-                    <div>Date: {item.date}</div>
+                    <div className="text-sm">{item.date}</div>
                 </div>
                    
                    <hr className="border-b border-gray-200 mt-2"/>

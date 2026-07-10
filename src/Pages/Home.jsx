@@ -3,6 +3,7 @@ import RecentExpenses from "../components/RecentExpenses";
 import ExpenseTracker from "./ExpenseTracker";
 import Recenttrip from "../components/Recenttrip";
 import { FaPlus } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 //import "./Home.css";
 function Home(){
     return(
@@ -12,8 +13,10 @@ function Home(){
             <div>
                 <h1 className="pt-5 max-w-xl pr-3 text-[50px]">Welcome to your Expense Tracker</h1>
                 <p className="text-[18px] text-[#434141] pt-5 max-w-md pb-7.5 font-semibold">Manage Your transport expense, drivers, clients and deliveries in one place</p>
-                <button className="w-50 bg-[#42813f]  text-white font-medium border-none rounded-[10px] px-8 py-5 text-[17px] cursor-pointer flex items-center gap-2 hover:bg-[#1f5c1bcc] hover:shadow-[5px_5px_5px_5px_rgba(168,224,91,0.696)] transition-all ease-in hover:scale-105"><FaPlus/> Add Expense</button>
+                <Link to="/addExpense">
+                <button className="w-50 bg-[#42813f]  text-white font-medium border-none rounded-[10px] px-8 py-5 text-[17px] cursor-pointer flex items-center gap-2 hover:bg-[#1f5c1bcc] hover:shadow-[5px_5px_5px_5px_rgba(168,224,91,0.696)] transition-all ease-in hover:scale-105"><FaPlus/> Add Expense</button></Link>
             </div>
+            
             <div className="flex flex-end">
                 <img src="./src/assets/Hero-image-bg.png" alt="main image"  />
             </div>
