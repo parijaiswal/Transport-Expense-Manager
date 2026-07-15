@@ -1,5 +1,6 @@
 import { FaTruck } from "react-icons/fa";
 import { FiHome,FiPlusCircle,FiUsers,FiUserPlus,FiLogOut,FiCreditCard } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 import '../index.css';
 function SideBar(){
     const navbardesgin = "text-gray-700  text-xl m-4 p-3 rounded-[8px] cursor-pointer hover:bg-[#cadec9] transition-all duration-300 ease-in-out hover:shadow-[0px_4px_8px_#1e8d3833] flex items-center gap-2 hover:text-[#1e8d38] hover:font-semibold hover:scale-105";
@@ -11,8 +12,8 @@ function SideBar(){
             </div>
             <div className="font-medium">
                 <ul>
-                    <li className={navbardesgin}><FiHome /> DashBoard</li>
-                    <li className={navbardesgin}><FiPlusCircle /> Add Expenses</li>
+                    <Link to="/"><li className={navbardesgin}><FiHome /> DashBoard</li></Link>
+                    <Link to="viewExp"><li className={navbardesgin}><FiPlusCircle /> Expenses</li></Link>
                     <li className={navbardesgin}><FiUsers /> Drivers</li>
                     <li className={navbardesgin}><FiUserPlus /> Clients</li>
                     <li className={navbardesgin}><FiCreditCard /> Payments</li>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import SideBar from "../../components/SideBar";
 import { IoReceiptOutline } from "react-icons/io5";
 function AddExpense() {
     const inputDesign = "border-1 ml-3 p-2 text-semibold mt-2 pt-0.5 rounded-[10px]";
@@ -60,10 +59,8 @@ function AddExpense() {
     };
 
     return (
-       <div className="flex flex-row">
-       <SideBar />
-        <div className="flex-1 flex justify-center items-center">
-            <div className="rounded-xl border-2 border-gray-300 p-6 shadow-[0_0_15px_#1e8d3833]  bg-white w-1/2 h-140">
+        <div>
+            <div className="rounded-xl border-2 border-gray-300 w-170 p-6 shadow-[0_0_15px_#1e8d3833] bg-white h-140">
                 <div className="text-center font-semibold text-2xl ">Add Expense</div> 
                 <form>
                     <div className={fieldDesign}>
@@ -88,8 +85,6 @@ function AddExpense() {
                 </form>
             </div>
         </div>
-        </div>
-    
     );
 }
 
