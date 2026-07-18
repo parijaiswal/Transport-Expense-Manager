@@ -18,4 +18,11 @@ export default defineConfig([
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
   },
+  {
+    // Config files run in Node, so they need Node globals (process, __dirname, etc.)
+    files: ['*.config.{js,mjs}'],
+    languageOptions: {
+      globals: globals.node,
+    },
+  },
 ])

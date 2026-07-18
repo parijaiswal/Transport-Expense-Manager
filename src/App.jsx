@@ -1,9 +1,9 @@
 import React from 'react';
-import MainPage from './Pages/MainPage';
-import AddExpense from './Pages/expenseDashboard/AddExpense';
+import MainPage from './pages/MainPage';
+import AddExpense from './pages/expenseDashboard/AddExpense';
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import ViewExp from './pages/expenseDashboard/ViewExp';
-import Home from './Pages/Home';
+import Home from './pages/Home';
 function App() {
   return(
     <BrowserRouter>
