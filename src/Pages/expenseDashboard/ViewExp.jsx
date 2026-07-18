@@ -9,7 +9,7 @@ function ViewExp(){
     return(
         <div>
             <div className="pt-2.5 pb-3.5 text-2xl font-semibold">
-                <h2>View Expense</h2>
+                <h2 className="font-bold text-[30px]">View Expense</h2>
                 <hr className="border-b border-gray-300 mt-1"/>
                 <CardInfo data={ViewExpData()}/>
             </div>
@@ -34,14 +34,15 @@ function ViewExp(){
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="h-78">
                         <tr className="border-b border-gray-300">
                             <td>15 Jul</td>
                             <td>GJ01AB1234</td>
                             <td>Fuel</td>
                             <td>HP Petrol Pump, Ahmedabad</td>
                             <td>₹5,000</td>
-                            <td><div  className="flex flex-row justify-center  text-lg gap-2"><FaEdit/><RiDeleteBin5Fill /></div></td>
+                            <td><div  className="flex flex-row justify-center  text-lg gap-2">
+                                <button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7 cursor-pointer"><FaEdit/></button><button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7 cursor-pointer"><RiDeleteBin5Fill /></button></div></td>
                         </tr>
 
                         <tr className="border-b border-gray-300">
@@ -50,7 +51,7 @@ function ViewExp(){
                             <td>Toll Tax</td>
                             <td>S.G Road, Toll-Tax</td>
                             <td>₹850</td>
-                            <td><div  className="flex flex-row justify-center  text-lg gap-2"><FaEdit/><RiDeleteBin5Fill /></div></td>
+                            <td><div className="flex flex-row justify-center  text-lg gap-2"><button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7 cursor-pointer"><FaEdit/></button><button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7 cursor-pointer"><RiDeleteBin5Fill /></button></div></td>
                         </tr>
 
                         <tr className="border-b border-gray-300">
@@ -59,7 +60,25 @@ function ViewExp(){
                             <td>Repair</td>
                             <td>Tyre Replacement</td>
                             <td>₹2000</td>
-                            <td><div  className="flex flex-row justify-center  text-lg gap-2"><FaEdit/><RiDeleteBin5Fill /></div></td>
+                            <td><div  className="flex flex-row justify-center  text-lg gap-3"><button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7 cursor-pointer"><FaEdit/></button><button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7 cursor-pointer"><RiDeleteBin5Fill /></button></div></td>
+                        </tr>
+
+                        <tr className="border-b border-gray-300">
+                            <td>14 Jul</td>
+                            <td>GJ01EF9876</td>
+                            <td>Fuel</td>
+                            <td>Nayra Pertol Pump, Sola</td>
+                            <td>₹2000</td>
+                            <td><div  className="flex flex-row justify-center  text-lg gap-3"><button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7 cursor-pointer"><FaEdit/></button><button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7" cursor-pointer><RiDeleteBin5Fill /></button></div></td>
+                        </tr>
+
+                         <tr className="border-b border-gray-300">
+                            <td>13 Jul</td>
+                            <td>GJ01PI9908</td>
+                            <td>Fuel</td>
+                            <td>Kanha Pertol Pump</td>
+                            <td>₹2000</td>
+                            <td><div  className="flex flex-row justify-center  text-lg gap-2"><button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7 cursor-pointer hover:shadow-[0px_5px_8px_#1e8d3833]"><FaEdit/></button><button className="flex items-center justify-center border-2 w-8 border-gray-300 rounded-[5px] h-7 cursor-pointer"><RiDeleteBin5Fill /></button></div></td>
                         </tr>
                     </tbody>
                 </table>
